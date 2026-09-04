@@ -94,6 +94,19 @@ export default function ProjectModal({
                   className="max-h-[75vh] w-full object-contain"
                 />
 
+                {project.gallery?.length > 1 && (
+                  <div className="grid grid-cols-2 gap-2 border-t border-white/10 bg-black/30 p-2">
+                    {project.gallery.map((image, index) => (
+                      <img
+                        key={image}
+                        src={image}
+                        alt={`${project.title} view ${index + 1}`}
+                        className="h-28 w-full object-cover opacity-70"
+                      />
+                    ))}
+                  </div>
+                )}
+
                 <button
                   type="button"
                   onClick={openFullscreen}
@@ -129,6 +142,39 @@ export default function ProjectModal({
                 <p className="max-w-lg text-base leading-relaxed text-white/55">
                   {project.description}
                 </p>
+
+                <div className="mt-8 space-y-6">
+                  <div>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#c7ff35]">
+                      Creative Direction
+                    </p>
+                    <p className="mt-2 max-w-lg text-sm leading-relaxed text-white/45">
+                      {project.creativeDirection}
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#c7ff35]">
+                      Design Approach
+                    </p>
+                    <p className="mt-2 max-w-lg text-sm leading-relaxed text-white/45">
+                      {project.designApproach}
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#c7ff35]">
+                      Deliverables
+                    </p>
+                    <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
+                      {project.deliverables.map((deliverable) => (
+                        <span key={deliverable} className="text-sm text-white/50">
+                          {deliverable}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
 
                 {/* Tags */}
                 <div className="mt-8 flex flex-wrap gap-2">

@@ -22,7 +22,7 @@ export default function Services() {
           <div className="flex items-end justify-between gap-8">
             <div>
               <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-[#c7ff35]">
-                08 — SERVICES
+                • SERVICES
               </p>
 
               <h2 className="font-display text-5xl font-bold uppercase leading-[0.85] tracking-[-0.06em] sm:text-7xl md:text-8xl lg:text-[9rem]">

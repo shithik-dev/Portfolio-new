@@ -16,7 +16,6 @@ import Process from "./components/Process";
 import About from "./components/About";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -55,10 +54,6 @@ function App() {
         <Skills />
         {/* 10 — PROCESS */}
         <Process />
-        {/* 11 — TESTIMONIALS */}
-        <Testimonials />
-        {/* 12 — CONTACT */}
-        {/* 13 — FOOTER */}
       </main>
     </>
   );

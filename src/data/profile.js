@@ -6,7 +6,7 @@ export const profile = {
   description:
     "Creating visual identities, compelling campaigns, cinematic edits and digital experiences that make brands impossible to ignore.",
 
-  availability: "AVAILABLE FOR SELECTED PROJECTS",
+  availability: "OPEN FOR CREATIVE PROJECTS",
 
   email: "your-email@example.com",
 
@@ -24,25 +24,6 @@ export const profile = {
 
   about:
     "I am a graphic designer and video editor focused on turning ideas into strong visual experiences. From brand identities and social media campaigns to cinematic video edits, I combine visual thinking, composition and storytelling to create work that communicates clearly and leaves an impression.",
-
-  stats: [
-    {
-      value: "—",
-      label: "PROJECTS",
-    },
-    {
-      value: "—",
-      label: "CLIENTS",
-    },
-    {
-      value: "—",
-      label: "DESIGNS",
-    },
-    {
-      value: "—",
-      label: "VIDEOS",
-    },
-  ],
 
   tools: [
     {

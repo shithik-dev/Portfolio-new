@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+
 import { profile } from "../data/profile";
 import { skillGroups } from "../data/skills";
 
@@ -11,8 +12,9 @@ export default function Skills() {
       className="relative overflow-hidden bg-[#080808] py-28 text-white sm:py-36 md:py-44 lg:py-52"
     >
       <div className="mx-auto w-full max-w-[1800px] px-4 sm:px-6 lg:px-8">
-
-        {/* Header */}
+        {/* =====================================================
+            HEADER
+        ====================================================== */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +23,7 @@ export default function Skills() {
           className="mb-16 border-b border-white/10 pb-8 md:mb-24"
         >
           <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-[#c7ff35]">
-            09 — SKILLS / TOOLKIT
+            • SKILLS / TOOLKIT
           </p>
 
           <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
@@ -38,7 +40,9 @@ export default function Skills() {
           </div>
         </motion.div>
 
-        {/* Skill Groups */}
+        {/* =====================================================
+            SKILL GROUPS
+        ====================================================== */}
         <div className="grid gap-6 md:grid-cols-2 md:gap-8">
           {skillGroups.map((group, index) => (
             <motion.div
@@ -50,32 +54,35 @@ export default function Skills() {
                 duration: 0.8,
                 delay: index * 0.1,
               }}
-              className="border border-white/10 p-6 sm:p-8 md:p-10"
+              className="group relative border border-white/10 p-6 transition-colors duration-500 hover:border-white/20 sm:p-8 md:p-10"
             >
+              {/* Group Header */}
               <div className="mb-12 flex items-start justify-between">
                 <span className="font-mono text-xs tracking-[0.2em] text-[#c7ff35]">
                   {group.number}
                 </span>
 
-                <ArrowUpRight className="h-5 w-5 text-white/20" />
+                <ArrowUpRight className="h-5 w-5 text-white/20 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-[#c7ff35]" />
               </div>
 
+              {/* Group Title */}
               <h3 className="mb-8 font-display text-3xl font-semibold uppercase tracking-[-0.04em] sm:text-4xl md:text-5xl">
                 {group.title}
               </h3>
 
+              {/* Skills List */}
               <div className="border-t border-white/10">
                 {group.skills.map((skill, skillIndex) => (
                   <div
                     key={skill}
-                    className="group flex items-center justify-between border-b border-white/10 py-4"
+                    className="group/skill flex items-center justify-between border-b border-white/10 py-4"
                   >
-                    <span className="text-sm text-white/50 transition-colors duration-300 group-hover:text-white">
+                    <span className="text-sm text-white/50 transition-colors duration-300 group-hover/skill:text-white">
                       {skill}
                     </span>
 
                     <span className="font-mono text-[9px] text-white/20">
-                      0{skillIndex + 1}
+                      {String(skillIndex + 1).padStart(2, "0")}
                     </span>
                   </div>
                 ))}
@@ -84,7 +91,9 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Software */}
+        {/* =====================================================
+            SOFTWARE / TOOLKIT
+        ====================================================== */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -92,6 +101,7 @@ export default function Skills() {
           transition={{ duration: 0.8 }}
           className="mt-20 md:mt-32"
         >
+          {/* Toolkit Header */}
           <div className="mb-8 flex items-end justify-between border-b border-white/10 pb-5">
             <div>
               <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.25em] text-white/30">
@@ -108,7 +118,9 @@ export default function Skills() {
             </span>
           </div>
 
-          {/* Tools Grid */}
+          {/* =================================================
+              TOOLS GRID
+          ================================================== */}
           <div className="grid grid-cols-2 border-l border-t border-white/10 sm:grid-cols-3 lg:grid-cols-6">
             {profile.tools.map((tool, index) => (
               <motion.div
@@ -120,11 +132,11 @@ export default function Skills() {
                   duration: 0.5,
                   delay: index * 0.05,
                 }}
-                className="group relative min-h-[180px] border-b border-r border-white/10 p-5 transition-colors duration-500 hover:bg-white/[0.04] sm:min-h-[210px] sm:p-6"
+                className="group relative min-h-[190px] border-b border-r border-white/10 p-6 transition-colors duration-500 hover:bg-white/[0.03] sm:min-h-[210px] sm:p-8 md:p-10"
               >
                 {/* Number */}
-                <span className="font-mono text-[9px] tracking-[0.2em] text-white/20">
-                  0{index + 1}
+                <span className="absolute left-5 top-5 font-mono text-[9px] tracking-[0.2em] text-white/20 sm:left-6 sm:top-6">
+                  {String(index + 1).padStart(2, "0")}
                 </span>
 
                 {/* Tool Mark */}
@@ -146,7 +158,9 @@ export default function Skills() {
           </div>
         </motion.div>
 
-        {/* Bottom Statement */}
+        {/* =====================================================
+            BOTTOM STATEMENT
+        ====================================================== */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -166,3 +180,4 @@ export default function Skills() {
     </section>
   );
 }
+

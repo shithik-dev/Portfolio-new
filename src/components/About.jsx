@@ -19,7 +19,7 @@ export default function About() {
         >
           <div>
             <p className="mb-3 font-mono text-xs uppercase tracking-[0.3em] text-[#c7ff35]">
-              07 — ABOUT
+              • ABOUT
             </p>
 
             <h2 className="font-display text-5xl font-bold uppercase leading-none tracking-[-0.05em] sm:text-6xl md:text-8xl lg:text-[9rem]">
@@ -116,33 +116,6 @@ export default function About() {
           </motion.div>
         </div>
 
-        {/* Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8 }}
-          className="mt-24 grid grid-cols-2 border-y border-white/10 md:mt-36 md:grid-cols-4"
-        >
-          {profile.stats.map((stat, index) => (
-            <div
-              key={stat.label}
-              className={`px-5 py-10 sm:px-8 md:py-14 ${
-                index !== profile.stats.length - 1
-                  ? "border-r border-white/10"
-                  : ""
-              }`}
-            >
-              <div className="font-display text-5xl font-bold tracking-[-0.05em] text-white sm:text-6xl md:text-7xl">
-                {stat.value}
-              </div>
-
-              <div className="mt-3 font-mono text-[10px] uppercase tracking-[0.25em] text-white/30">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );
