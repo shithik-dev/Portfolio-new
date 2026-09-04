@@ -1,50 +1,123 @@
+
 export const services = [
   {
+    id: 1,
     number: "01",
-    title: "GRAPHIC DESIGN",
+    title: "Brand Identity",
     description:
-      "Creative visual design built around clarity, impact and strong visual communication.",
+      "Building distinctive visual identities through logos, typography, color systems and cohesive brand direction.",
+    capabilities: [
+      "Logo Design",
+      "Visual Identity",
+      "Typography",
+      "Color Systems",
+      "Brand Guidelines",
+    ],
   },
+
   {
+    id: 2,
     number: "02",
-    title: "LOGO & BRANDING",
+    title: "Social Media Design",
     description:
-      "Distinctive identities, logos and visual systems designed for memorable brands.",
+      "Creating visual content designed to make brands stand out across social platforms and digital campaigns.",
+    capabilities: [
+      "Social Posts",
+      "Campaign Creatives",
+      "Story Designs",
+      "Promotional Graphics",
+      "Content Systems",
+    ],
   },
+
   {
+    id: 3,
     number: "03",
-    title: "SOCIAL MEDIA DESIGN",
+    title: "Advertising",
     description:
-      "Scroll-stopping creative content for modern social platforms.",
+      "Designing attention-driven advertising creatives that communicate a message clearly and visually.",
+    capabilities: [
+      "Digital Ads",
+      "Campaign Visuals",
+      "Promotional Designs",
+      "Creative Concepts",
+      "Ad Variations",
+    ],
   },
+
   {
+    id: 4,
     number: "04",
-    title: "PRODUCT & PACKAGING DESIGN",
+    title: "Packaging Design",
     description:
-      "Premium product presentation and packaging concepts.",
+      "Developing packaging visuals that balance product presentation, brand identity and visual impact.",
+    capabilities: [
+      "Product Packaging",
+      "Label Design",
+      "Box Design",
+      "Print Artwork",
+      "Packaging Mockups",
+    ],
   },
+
   {
+    id: 5,
     number: "05",
-    title: "PRODUCT MANIPULATION",
+    title: "Product Visuals",
     description:
-      "Creative compositions, retouching and professional product manipulation.",
+      "Transforming product imagery into polished visual compositions for campaigns, advertisements and digital platforms.",
+    capabilities: [
+      "Product Manipulation",
+      "Product Retouching",
+      "Compositing",
+      "Mockups",
+      "Campaign Visuals",
+    ],
   },
+
   {
+    id: 6,
     number: "06",
-    title: "VIDEO EDITING",
+    title: "Video Editing",
     description:
-      "Cinematic editing focused on rhythm, emotion and storytelling.",
+      "Crafting engaging video stories through pacing, composition, transitions, sound and visual storytelling.",
+    capabilities: [
+      "Video Editing",
+      "Color Grading",
+      "Sound Design",
+      "Visual Effects",
+      "Storytelling",
+    ],
   },
+
   {
+    id: 7,
     number: "07",
-    title: "MOTION GRAPHICS",
+    title: "Motion Graphics",
     description:
-      "Dynamic visual communication through motion and animation.",
+      "Adding movement and visual energy to ideas through animated graphics, typography and transitions.",
+    capabilities: [
+      "Animated Typography",
+      "Motion Design",
+      "Transitions",
+      "Visual Effects",
+      "Title Animations",
+    ],
   },
+
   {
+    id: 8,
     number: "08",
-    title: "CREATIVE AD CAMPAIGNS",
+    title: "Creative Direction",
     description:
-      "Visual campaigns designed to capture attention and communicate ideas.",
+      "Developing visual direction that brings individual creative pieces together into a consistent visual language.",
+    capabilities: [
+      "Art Direction",
+      "Visual Concepts",
+      "Campaign Direction",
+      "Creative Strategy",
+      "Visual Systems",
+    ],
   },
 ];
+

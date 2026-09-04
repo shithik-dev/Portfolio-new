@@ -1,25 +1,29 @@
+
 export const testimonials = [
-  {
-    quote:
-      "Add a real client testimonial here.",
-    name: "Client Name",
-    role: "Client Role",
-    company: "Company Name",
-  },
-
-  {
-    quote:
-      "Add another genuine testimonial here.",
-    name: "Client Name",
-    role: "Client Role",
-    company: "Company Name",
-  },
-
-  {
-    quote:
-      "Add a third genuine testimonial here.",
-    name: "Client Name",
-    role: "Client Role",
-    company: "Company Name",
-  },
+  // Add real testimonials here when available.
+  //
+  // Example:
+  //
+  // {
+  //   id: 1,
+  //   quote:
+  //     "Add the client's real testimonial here.",
+  //   name: "Client Name",
+  //   role: "Founder / Creative Director",
+  //   company: "Company Name",
+  //   project: "Brand Identity",
+  // },
 ];
+
+export const clientLogos = [
+  // Add real client/company logos here when available.
+  //
+  // Example:
+  //
+  // {
+  //   id: 1,
+  //   name: "Client Name",
+  //   logo: "/images/clients/client-name.svg",
+  // },
+];
+
