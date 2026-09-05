@@ -121,7 +121,7 @@ export default function VideoShowcase() {
               </div>
 
               {/* VIDEO */}
-              <VideoCard video={videoProjects[1]} />
+              <VideoCard video={videoProjects[1]} aspectRatio="9 / 16" />
 
               {/* Project Information */}
               <div className="mt-6 grid gap-6 md:grid-cols-[1fr_auto]">

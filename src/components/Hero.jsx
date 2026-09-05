@@ -72,7 +72,7 @@ className="h-full w-full object-cover object-center"
         className="hidden text-right sm:block"
       >
         <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">
-          BASED IN INDIA
+          DUBAI,UAE
         </p>
 
         <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">

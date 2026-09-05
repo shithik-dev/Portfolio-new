@@ -8,11 +8,11 @@ export const profile = {
 
   availability: "OPEN FOR CREATIVE PROJECTS",
 
-  email: "your-email@example.com",
+  email: "parvesmusraf5115@gmail.com",
 
-  instagram: "#",
-  linkedin: "#",
-  youtube: "#",
+  instagram: "https://www.instagram.com/parvez_muzzraf_?igsi=MTk2OWUxYzRwbzdlYg==",
+  linkedin: "https://www.linkedin.com/in/parvees-musaraf-m-94104b354?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+ 
 
   heroImages: [
     "/images/hero/hero-01.jpg",

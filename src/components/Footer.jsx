@@ -41,12 +41,12 @@ const navigation = [
 const socialLinks = [
   {
     label: "INSTAGRAM",
-    href: "#",
+    href: "https://www.instagram.com/parvez_muzzraf_?igsi=MTk2OWUxYzRwbzdlYg==",
     icon: Camera,
   },
   {
     label: "LINKEDIN",
-    href: "#",
+    href: "https://www.linkedin.com/in/parvees-musaraf-m-94104b354?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     icon: Briefcase,
   },
   {

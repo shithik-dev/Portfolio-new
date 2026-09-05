@@ -1,7 +1,7 @@
 
 export const contactInfo = {
-  email: "your-email@example.com",
-  location: "INDIA",
+  email: "parvesmusraf5115@gmail.com",
+  location: "DUBAI, UAE",
   availability: "OPEN FOR CREATIVE PROJECTS",
 };
 

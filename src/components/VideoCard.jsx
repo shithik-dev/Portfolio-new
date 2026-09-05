@@ -255,4 +255,3 @@ export default function VideoCard({ video }) {
     </motion.div>
   );
 }
-

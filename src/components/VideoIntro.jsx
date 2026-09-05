@@ -41,16 +41,21 @@ export default function VideoIntro() {
           transition={{ duration: 1 }}
           className="relative w-full overflow-hidden bg-black"
         >
-          <video
-            src={introVideo.video}
-            poster={introVideo.poster}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="block h-auto max-h-[85vh] min-h-[400px] w-full object-cover"
-          />
+          <div
+            className="relative w-full overflow-hidden bg-black"
+            style={{ aspectRatio: "1283 / 270" }}
+          >
+            <video
+              src={introVideo.video}
+              poster={introVideo.poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="absolute inset-0 h-full w-full object-cover object-center"
+            />
+          </div>
 
           {/* Cinematic overlay */}
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10" />
