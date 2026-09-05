@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Parvez Mushraf",
+  name: "Parvees Musaraf",
 
   profession: "Graphic Designer & Video Editor",
 

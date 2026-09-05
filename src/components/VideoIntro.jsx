@@ -18,9 +18,13 @@ export default function VideoIntro() {
           transition={{ duration: 0.8 }}
           className="mb-12 md:mb-16"
         >
-          <p className="mb-4 font-mono text-xs tracking-[0.3em] text-[#c7ff35]">
-            01 — THE ART OF VISUAL COMMUNICATION
-          </p>
+          <div className="mb-5 flex items-center gap-3">
+                <span className="h-2 w-2 rounded-full bg-[#c7ff35]" />
+
+                <span className="font-mono text-[10px] tracking-[0.25em] text-[#c7ff35]">
+                  THE ART OF VISUAL COMMUNICATION
+                </span>
+              </div>
 
           <h2 className="font-display text-5xl font-bold uppercase leading-[0.9] tracking-[-0.04em] text-white sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem]">
             WHAT IS

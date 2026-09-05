@@ -69,12 +69,12 @@ export default function FeaturedWork() {
                 <span className="h-2 w-2 rounded-full bg-[#c7ff35]" />
 
                 <span className="font-mono text-[10px] tracking-[0.25em] text-[#c7ff35]">
-                  SELECTED WORK
+                  PORTFOLIO
                 </span>
               </div>
 
               <h2 className="font-display text-6xl font-bold uppercase leading-[0.85] tracking-[-0.05em] text-white sm:text-7xl md:text-8xl lg:text-[9rem]">
-                SELECTED
+                MY
                 <br />
                 <span className="text-white/25">WORK.</span>
               </h2>

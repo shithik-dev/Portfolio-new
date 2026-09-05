@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const links = [
   ["WORK", "work"],
-  ["VIDEOS", "video-editing"],
+  ["VIDEO EDITING", "video-editing"],
   ["ABOUT", "about"],
   ["SERVICES", "services"],
   ["SKILLS", "skills"],
@@ -61,7 +61,7 @@ export default function Navbar() {
             onClick={() => scrollToSection("home")}
             className="font-display text-xl font-bold tracking-tight text-white"
           >
-            PARVEZ<span className="lime">.</span>
+            PARVEES<span className="lime">.</span>
           </button>
 
           {/* ================= DESKTOP NAVIGATION ================= */}
@@ -124,8 +124,8 @@ export default function Navbar() {
 
             {/* ================= MOBILE FOOTER ================= */}
             <div className="absolute bottom-8 left-7 right-7 flex justify-between font-mono text-xs text-white/40">
-              <span>PARVEZ MUSHRAF</span>
-              <span>CREATIVE PORTFOLIO</span>
+              <span>PARVEES MUSARAF</span>
+              <span>DESIGN &amp; VIDEO</span>
             </div>
           </motion.div>
         )}

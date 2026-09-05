@@ -18,9 +18,13 @@ export default function About() {
           className="mb-16 flex items-end justify-between border-b border-white/10 pb-6 md:mb-24"
         >
           <div>
-            <p className="mb-3 font-mono text-xs uppercase tracking-[0.3em] text-[#c7ff35]">
-              • ABOUT
-            </p>
+            <div className="mb-3 flex items-center gap-3">
+              <span className="h-2 w-2 rounded-full bg-[#c7ff35]" />
+
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/50">
+                ABOUT
+              </p>
+            </div>
 
             <h2 className="font-display text-5xl font-bold uppercase leading-none tracking-[-0.05em] sm:text-6xl md:text-8xl lg:text-[9rem]">
               ABOUT
@@ -60,7 +64,7 @@ export default function About() {
             </div>
 
             <div className="mt-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-white/30">
-              <span>PARVEZ MUSHRAF</span>
+              <span>PARVEES MUSARAF</span>
               <span>ABOUT / 01</span>
             </div>
           </motion.div>

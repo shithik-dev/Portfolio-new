@@ -21,9 +21,13 @@ export default function Process() {
         >
           <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
             <div>
-              <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-[#c7ff35]">
-                • PROCESS
-              </p>
+              <div className="mb-4 flex items-center gap-3">
+                <span className="h-2 w-2 rounded-full bg-[#c7ff35]" />
+
+                <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/50">
+                  PROCESS
+                </p>
+              </div>
 
               <h2 className="font-display text-5xl font-bold uppercase leading-[0.82] tracking-[-0.06em] sm:text-7xl md:text-8xl lg:text-[9rem]">
                 HOW I

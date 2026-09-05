@@ -29,11 +29,11 @@ export default function LoadingScreen() {
         />
 
         <div className="font-display text-3xl font-bold">
-          PARVEZ<span className="text-[#c7ff35]">.</span>
+          PARVEES<span className="text-[#c7ff35]">.</span>
         </div>
 
         <p className="mt-3 font-mono text-[9px] tracking-[0.3em] text-white/40">
-          CREATIVE PORTFOLIO
+          DESIGN &amp; VIDEO
         </p>
       </div>
     </motion.div>

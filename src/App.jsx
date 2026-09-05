@@ -16,7 +16,8 @@ import Process from "./components/Process";
 import About from "./components/About";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
-
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -54,7 +55,14 @@ function App() {
         <Skills />
         {/* 10 — PROCESS */}
         <Process />
+        {/* 12 — CONTACT */}
+        <Contact />
+
+
+
       </main>
+      {/* 13 — FOOTER */}
+      <Footer />
     </>
   );
 }

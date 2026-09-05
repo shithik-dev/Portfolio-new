@@ -12,17 +12,26 @@ export const videos = [
     featured: true,
   },
 
-  {
-    id: 2,
-    title: "Video Project One",
-    category: "Video Editing",
-    label: "01 — VIDEO EDITING",
-    description:
-      "A cinematic editing project focused on rhythm, emotion and visual storytelling.",
-    video: "/videos/video-project-01.mp4",
-    poster: "/images/video/video-01.jpg",
-    featured: true,
-  },
+{
+  id: 2,
+
+  title: "From Design to Production",
+
+  category: "Video Editing",
+
+  label: "01 — VIDEO EDITING",
+
+  description:
+    "A dynamic fashion design explainer crafted to visually communicate the importance of Tech Packs and the journey from garment concept to production.",
+
+  video: "/videos/video-project-01.mp4",
+
+  poster: "/videos/video-01.png",
+
+  featured: true,
+},
+
+
 
   {
     id: 3,

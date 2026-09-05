@@ -99,8 +99,8 @@ className="h-full w-full object-cover object-center"
         </p>
 
         <h1 className="font-display text-[15vw] font-bold uppercase leading-[0.78] tracking-[-0.07em] sm:text-[13vw] lg:text-[11vw]">
-          <span className="block text-white">PARVEZ</span>
-          <span className="block text-white/25">MUSHRAF</span>
+          <span className="block text-white">PARVEES</span>
+          <span className="block text-white/25">MUSARAF</span>
         </h1>
       </motion.div>
 
@@ -163,7 +163,7 @@ className="h-full w-full object-cover object-center"
     {/* Bottom Coordinates */}
     <div className="mt-8 flex items-center justify-between border-t border-white/10 pt-4">
       <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/30">
-        PARVEZ MUSHRAF
+        PARVEES MUSARAF
       </span>
 
       <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/30">
