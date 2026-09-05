@@ -14,6 +14,7 @@ import {
   projectTypes,
   timelineOptions,
 } from "../data/contact";
+import { submitContactForm } from "../services/contact.service";
 
 const initialForm = {
   name: "",
@@ -86,7 +87,7 @@ export default function Contact() {
   // SUBMIT
   // =========================
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     const validationErrors = validateForm();
@@ -97,17 +98,21 @@ export default function Contact() {
       return;
     }
 
-    /*
-      Form is currently validated locally.
+    setStatus("submitting");
 
-      Connect this function to your preferred backend,
-      Formspree, EmailJS, Web3Forms, or your own API
-      when you are ready to receive submissions.
-    */
+    try {
+      await submitContactForm({
+        ...form,
+        details: form.message,
+      });
 
-    setStatus("success");
-    setErrors({});
-    setForm(initialForm);
+      setStatus("success");
+      setErrors({});
+      setForm(initialForm);
+    } catch (error) {
+      console.error("Contact form submission failed:", error);
+      setStatus("error");
+    }
   };
 
   return (
@@ -569,10 +574,13 @@ export default function Contact() {
 
               <button
                 type="submit"
+                disabled={status === "submitting"}
                 className="group mt-8 flex w-full items-center justify-between bg-[#c7ff35] px-6 py-5 text-black transition-all duration-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-[#c7ff35] focus:ring-offset-2 focus:ring-offset-[#080808]"
               >
                 <span className="font-mono text-xs font-bold uppercase tracking-[0.2em]">
-                  SEND PROJECT INQUIRY
+                  {status === "submitting"
+                    ? "SENDING INQUIRY..."
+                    : "SEND PROJECT INQUIRY"}
                 </span>
 
                 <ArrowUpRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
